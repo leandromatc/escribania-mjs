@@ -8,10 +8,10 @@ export default function Home() {
       <section>
         <Hero />
       </section>
-      <section className="padding-t px-4 sm:padding">
+      <section className="padding-t px-2 sm:padding">
         <Propiedades />
       </section>
-      <section className="padding">
+      <section className="padding-t px-2 sm:padding">
         <Servicios />
       </section>
     </main>
