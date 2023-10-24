@@ -8,7 +8,7 @@ import { BsHouse } from "react-icons/bs";
 export default function Propiedad() {
   console.log("Hola");
   return (
-    <section className="bg-bgColor p-2 md:padding-x  flex flex-col items-center">
+    <section className="bg-bgColor p-2 md:padding-x padding-b flex flex-col items-center">
       <div className="mt-36">
         <p className="uppercase opacity-50 text-center">Mjs Escribanía</p>
         <h2 className="text-textDark text-3xl md:text-4xl font-bold px-5 text-center">

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Servicios() {
   return (
-    <div className="w-full flex flex-col items-center font-inter">
+    <div className="w-full flex flex-col items-center font-inter lg:pb-20">
       <h2 className="font-palanquin text-5xl  sm:text-7xl text-center text-textDark ">
         Servicios
       </h2>
