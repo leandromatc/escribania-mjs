@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export default function PropiedadCard() {
   return (
     <motion.article
-      className="relative bg-white rounded-3xl overflow-hidden flex flex-col max-w-full shadow-lg overflow-hidden"
+      className="relative bg-white rounded-3xl text-textDark flex flex-col max-w-full shadow-lg overflow-hidden"
       initial={{ opacity: 0, marginTop: "5rem" }}
       whileInView={{ opacity: 1, marginTop: 0 }}
       transition={{ delay: 0.1, ease: "linear" }}
@@ -21,18 +21,14 @@ export default function PropiedadCard() {
       <img src={house} alt="Casa" className=" object-cover" />
       <div className="p-5">
         <Link to={"/propiedad"}>
-          <h4 className="uppercase text-2xl font-inter font-bold text-textDark">
-            Alquiler
-          </h4>
-          <p className="font-inter text-xl text-textDark">
-            Casa de 1 dormitorio y 1 baño.
-          </p>
+          <h4 className="uppercase text-2xl font-inter font-bold">Alquiler</h4>
+          <p className="font-inter text-xl">Casa de 1 dormitorio y 1 baño.</p>
         </Link>
-        <p className="flex items-center text-xl text-textDark">
+        <p className="flex items-center text-xl mt-2">
           <ImLocation className="mr-1" /> Sánchez 892
         </p>
       </div>
-      <div className="bg-gray-100 flex flex-col md:flex-row justify-center gap-5 items-center m-5 p-5 rounded-2xl text-textDark">
+      <div className="bg-gray-100 flex flex-col md:flex-row justify-center gap-5 items-center m-5 p-5 rounded-2xl">
         <div className="flex items-center gap-2">
           <BiBed className="text-2xl" />
           <p>1 dormitorio</p>
@@ -43,7 +39,9 @@ export default function PropiedadCard() {
         </div>
         <div className="flex items-center gap-2">
           <RxDimensions className="text-2xl" />
-          <p>250m2</p>
+          <p>
+            250m<sup>2</sup>
+          </p>
         </div>
       </div>
       <div className="absolute left-5 top-5 flex items-center rounded overflow-hidden">

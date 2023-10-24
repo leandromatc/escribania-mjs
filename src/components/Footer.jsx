@@ -93,6 +93,9 @@ export default function Footer() {
         </div>
       </section>
       <hr className="w-full h-1 mx-auto my-16 bg-primary border-0 rounded md:my-10" />
+      <div>
+        <p>Copyright &copy; 2023 ESCRIBANÍA MJS</p>
+      </div>
     </footer>
   );
 }

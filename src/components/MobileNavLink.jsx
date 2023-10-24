@@ -21,8 +21,6 @@ export default function MobileNavLink({ title, href, toggleMenu }) {
   return (
     <motion.div
       variants={mobileVars}
-      initial="initial"
-      animate="open"
       className="text-4xl uppercase text-white whitespace-nowrap"
     >
       <Link to={href} onClick={toggleMenu}>

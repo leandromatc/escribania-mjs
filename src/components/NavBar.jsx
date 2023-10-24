@@ -36,14 +36,13 @@ export default function NavBar() {
   const containerVars = {
     initial: {
       transition: {
-        staggerChildren: 1,
+        staggerChildren: 0.9,
       },
     },
     open: {
       transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.02,
-        staggerDirection: -1,
+        delayChildren: 0.1,
+        staggerChildren: 0.09,
       },
     },
   };
