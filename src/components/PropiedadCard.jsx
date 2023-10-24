@@ -5,25 +5,29 @@ import { ImLocation } from "react-icons/im";
 import { AiFillStar } from "react-icons/ai";
 import house from "../assets/images/bg-hero.jpg";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-export default function Propiedad() {
+export default function PropiedadCard() {
   return (
     <motion.article
       className="relative bg-white rounded-3xl overflow-hidden flex flex-col max-w-full shadow-lg overflow-hidden"
       initial={{ opacity: 0, marginTop: "5rem" }}
       whileInView={{ opacity: 1, marginTop: 0 }}
+      transition={{ delay: 0.2 }}
       viewport={{
         once: true,
       }}
     >
       <img src={house} alt="Casa" className=" object-cover" />
       <div className="p-5">
-        <h4 className="uppercase text-2xl font-inter font-bold text-textDark">
-          Alquiler
-        </h4>
-        <p className="font-inter text-xl text-textDark">
-          Casa de 1 dormitorio y 1 baño.
-        </p>
+        <Link to={"/propiedad"}>
+          <h4 className="uppercase text-2xl font-inter font-bold text-textDark">
+            Alquiler
+          </h4>
+          <p className="font-inter text-xl text-textDark">
+            Casa de 1 dormitorio y 1 baño.
+          </p>
+        </Link>
         <p className="flex items-center text-xl text-textDark">
           <ImLocation className="mr-1" /> Sánchez 892
         </p>

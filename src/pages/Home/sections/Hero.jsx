@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="bg-hero h-screen bg-cover flex justify-center items-center">
       <div className="flex flex-col items-center">
         <h1 className="sm:text-6xl text-4xl md:px-20 font-palanquin text-white p-10">
-          Encontra la casa que estás buscando para{" "}
+          Encontrá la casa que estás buscando para{" "}
           <span className="text-emphasis">comprar o alquilar</span>
         </h1>
         <div className="flex flex-col md:mt-10 gap-5 lg:flex-row  bg-white rounded-3xl p-5  lg:gap-20 justify-center items-center text-gray-600">

@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer";
+import Propiedad from "./pages/Propiedad";
 
 export default function App() {
   const location = useLocation();
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="sobre-nosotros" element={<Home />} />
         <Route path="servicios" element={<Home />} />
         <Route path="contacto" element={<Home />} />
+        <Route path="propiedad" element={<Propiedad />} />
       </Routes>
       <Footer />
     </>

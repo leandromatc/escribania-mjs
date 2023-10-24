@@ -1,4 +1,4 @@
-import Propiedad from "../../../components/Propiedad";
+import PropiedadCard from "../../../components/PropiedadCard";
 
 export default function Propiedades() {
   return (
@@ -10,14 +10,14 @@ export default function Propiedades() {
         <span className="bg-textDark w-48 h-[1px] block mt-8"></span>
       </div>
       <div className="mt-20 grid lg:grid-cols-2 xl:grid-cols-3 justify-items-center gap-10">
-        <Propiedad />
-        <Propiedad />
-        <Propiedad />
-        <Propiedad />
-        <Propiedad />
-        <Propiedad />
-        <Propiedad />
-        <Propiedad />
+        <PropiedadCard />
+        <PropiedadCard />
+        <PropiedadCard />
+        <PropiedadCard />
+        <PropiedadCard />
+        <PropiedadCard />
+        <PropiedadCard />
+        <PropiedadCard />
       </div>
     </>
   );
