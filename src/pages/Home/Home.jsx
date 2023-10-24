@@ -4,7 +4,7 @@ import Servicios from "./sections/Servicios";
 
 export default function Home() {
   return (
-    <main className="relative bg-bgColor scroll-smooth">
+    <main className="relative bg-bgColor scroll-smooth pb-20 md:pb-0">
       <section>
         <Hero />
       </section>

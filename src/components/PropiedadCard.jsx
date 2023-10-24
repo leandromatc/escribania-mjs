@@ -13,7 +13,7 @@ export default function PropiedadCard() {
       className="relative bg-white rounded-3xl overflow-hidden flex flex-col max-w-full shadow-lg overflow-hidden"
       initial={{ opacity: 0, marginTop: "5rem" }}
       whileInView={{ opacity: 1, marginTop: 0 }}
-      transition={{ delay: 0.2 }}
+      transition={{ delay: 0.1, ease: "linear" }}
       viewport={{
         once: true,
       }}
