@@ -4,11 +4,11 @@ import Servicios from "./sections/Servicios";
 
 export default function Home() {
   return (
-    <main className="relative bg-bgColor">
+    <main className="relative bg-bgColor scroll-smooth">
       <section>
         <Hero />
       </section>
-      <section className="px-4 sm:padding">
+      <section className="padding-t px-4 sm:padding">
         <Propiedades />
       </section>
       <section className="padding">

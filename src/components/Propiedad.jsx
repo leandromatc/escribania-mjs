@@ -6,8 +6,8 @@ import house from "../assets/images/bg-hero.jpg";
 
 export default function Propiedad() {
   return (
-    <article className="bg-white rounded-3xl relative">
-      <img src={house} alt="Casa" className="overflow-hidden rounded-t-2xl" />
+    <article className="bg-white rounded-3xl relative overflow-hidden flex flex-col max-w-[300px] sm:max-w-full">
+      <img src={house} alt="Casa" className=" object-cover" />
       <div className="p-5">
         <h4 className="uppercase text-2xl font-inter font-bold text-textDark">
           Alquiler
@@ -19,7 +19,7 @@ export default function Propiedad() {
           <ImLocation className="mr-1" /> Sánchez 892
         </p>
       </div>
-      <div className="bg-gray-100 flex justify-center gap-5 items-center m-5 p-5 rounded-2xl text-textDark">
+      <div className="bg-gray-100 flex flex-col md:flex-row justify-center gap-5 items-center m-5 p-5 rounded-2xl text-textDark">
         <div className="flex items-center gap-2">
           <BiBed className="text-2xl" />
           <p>1 dormitorio</p>

@@ -1,10 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import logoMJS from "../assets/images/logoMJS.svg";
 import { navLinks } from "../constants";
+import hamburger from "../assets/icons/hamburger.svg";
 
 export default function NavBar() {
   return (
-    <header className="w-full z-10 absolute padding-x py-4 bg-primary">
+    <header className="w-full z-10 absolute padding-x px-2 py-4 bg-primary">
       <nav className="flex justify-between items-center max-container bg-">
         <Link to={"/"}>
           <img src={logoMJS} alt="Logo MJS" width={50} height={50} />
@@ -21,6 +22,9 @@ export default function NavBar() {
             </li>
           ))}
         </ul>
+        <div className="hidden max-lg:block">
+          <img src={hamburger} alt="Hamburger" width={25} height={25} />
+        </div>
       </nav>
     </header>
   );
